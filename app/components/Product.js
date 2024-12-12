@@ -1,6 +1,6 @@
 export default function Product() {
     return (
-        <div className="px-6 py-4 md:px-10 md:py-6">
+        <div className="px-6 py-4 md:px-72 md:py-6 mx-6">
             <h1 className="text-2xl font-semibold mb-4 md:text-3xl">Amstel Nest - an urban retreat for two</h1>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {/* Main large image */}
@@ -42,19 +42,26 @@ export default function Product() {
                 </div>
             </div>
 
-            {/* Share and Save buttons */}
-            <div className="flex justify-between mt-4 md:mt-6">
-                <button className="text-gray-500 underline hover:text-gray-700">Share</button>
-                <button className="text-gray-500 underline hover:text-gray-700">Save</button>
-            </div>
+            {/* Additional Section */}
+            <div className="mt-8">
+            <h1 className="text-lg font-semibold mb-4 md:text-xl">Room in Watergraafsmeer, Netherlands</h1>
+            <p>1 double bed Private attached bathroom</p>
 
-            {/* Additional screenshot */}
-            <div className="mt-10">
-                <img
-                    src="https://cdn.discordapp.com/attachments/1316609851673153537/1316610443963531355/1web.png"
-                    alt="Additional screenshot"
-                    className="rounded-lg w-full h-auto"
-                />
+            <div className="mt-8 border-b p-4 border-gray-300">
+                        <div className="flex items-center">
+                            <img
+                                src="https://a0.muscache.com/im/pictures/user/1b70958a-abe7-47f8-995c-391afcea7310.jpg?im_w=240&im_format=avif"
+                                alt="Superhost"
+                                className="w-12 h-12 rounded-full mr-4"
+                            />
+                            <div>
+                                <p className="font-semibold">Hosted by Rob & Fang</p>
+                                <p className="text-gray-600 text-sm">Superhost &#x2022; 13 years hosting</p>
+                            </div>
+                        </div>
+                    </div>
+                
+
             </div>
         </div>
     );
